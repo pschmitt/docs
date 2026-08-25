@@ -10,7 +10,7 @@ The Cluster Node Autoscaler automatically adjusts the number of nodes in a Kuber
 
 # How the Cluster Autoscaler Works:
 **Scaling Up:**
-When the autoscaler detects that some pods cannot be scheduled due to insufficient resources (CPU, memory), it will automatically add new nodes to the cluster to provide the necessary capacity. It evaluates the capacity available to Kubernetes pods, not the raw CPU and memory of the OpenStack flavor. Node reservations and requests from platform components reduce the capacity available to customer workloads. See [Node Resource Availability](/managedk8s/clusterlifecycle/node-resources/) for details.
+When the autoscaler detects that some pods cannot be scheduled due to insufficient resources (CPU, memory), it will automatically add new nodes to the cluster to provide the necessary capacity. It evaluates the capacity available to Kubernetes pods, not the raw CPU and memory of the OpenStack flavor. Node reservations and requests from platform components reduce the capacity available to your workloads. See [Node Resource Availability](/managedk8s/clusterlifecycle/node-resources/) for details.
 
 **Scaling Down:**
 If the autoscaler identifies nodes that are underutilized or completely not used for a configurable period, it will remove those nodes to optimize resource usage and reduce costs. Before scaling down, it ensures that there are no critical pods running on those nodes and that workloads can be safely moved to other nodes.
