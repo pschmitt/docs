@@ -9,8 +9,6 @@ parent: Cluster Lifecycle
 
 The CPU and memory shown by an OpenStack flavor describe the capacity of the virtual machine. They do not represent the capacity available for your applications. Every worker node needs capacity for the operating system, Kubernetes itself, and the managed platform components that run in your cluster.
 
-Worker nodes run both your applications and managed platform components. The platform components also require CPU and memory, which reduces the capacity available for your applications.
-
 ## From flavor capacity to workload capacity
 
 For worker nodes, Kubernetes accounts for the flavor capacity as follows:
