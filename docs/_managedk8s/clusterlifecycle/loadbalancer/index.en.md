@@ -10,7 +10,7 @@ parent: Cluster Lifecycle
 Workload clusters use [OpenStack Octavia](/openstack/networking/octavia_loadbalancer/) to implement Kubernetes `type: LoadBalancer` Services. Two Octavia providers are available:
 
 - **`amphora`** (default) - Octavia spawns a dedicated virtual machine (amphora) running HAProxy for each load balancer.
-- **`ovn`** - load balancing is implemented natively by OVN, without dedicated virtual machines.
+- **`ovn`** - Load balancing is implemented natively by OVN, without dedicated virtual machines.
 
 ## Choosing a provider
 
